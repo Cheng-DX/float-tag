@@ -1,0 +1,53 @@
+
+.wizard-tag-default {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tag-background-color);
+  border: none;
+  border-radius: 0.2em;
+  font-size: 0.7rem;
+  padding: 10px;
+  z-index: var(--tag-z-index);
+  transition: top 0.3s ease-in-out;
+}
+
+/**
+ * 箭头
+ */
+.wizard-tag-default::before {
+  content: "";
+  position: absolute;
+  left: -0.3em;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: var(--tag-background-color);
+  transform: rotate(45deg);
+  border-radius: 20%;
+}
+
+.wizard-tag-top::before {
+  left: auto;
+  bottom: -0.3em;
+}
+
+.wizard-tag-bottom::before {
+  left: auto;
+  top: -0.3em;
+}
+
+.wizard-tag-left::before {
+  top: auto;
+  left: auto;
+  right: -0.3em;
+}
+
+.wizard-tag-hidden {
+  display: none;
+}
+
+.wizard-tag-link {
+  text-decoration: underline;
+}
