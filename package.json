@@ -1,8 +1,12 @@
 {
   "name": "float-tag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "FLoat tags",
-  "main": "index.js",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cheng-DX/float-tag.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
